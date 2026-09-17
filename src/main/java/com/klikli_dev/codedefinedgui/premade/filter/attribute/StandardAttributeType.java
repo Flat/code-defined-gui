@@ -21,7 +21,6 @@ import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.item.crafting.SingleRecipeInput;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.ComposterBlock;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.transfer.access.ItemAccess;
 
@@ -70,11 +69,11 @@ public class StandardAttributeType implements ItemAttributeType {
         BADLY_DAMAGED("badly_damaged", stack -> stack.isDamaged() && (float) stack.getDamageValue() / stack.getMaxDamage() > 0.75F),
         NOT_STACKABLE("not_stackable", stack -> !stack.isStackable()),
         EQUIPABLE("equipable", stack -> stack.has(DataComponents.EQUIPPABLE)),
-        FURNACE_FUEL("furnace_fuel", (stack, level) -> stack.getBurnTime(RecipeType.SMELTING, level.fuelValues()) > 0),
+        FURNACE_FUEL("furnace_fuel", stack -> stack.has(DataComponents.COOKING_FUEL)),
         SMELTABLE("smeltable", (stack, level) -> hasRecipe(stack, level, RecipeType.SMELTING)),
         SMOKABLE("smokable", (stack, level) -> hasRecipe(stack, level, RecipeType.SMOKING)),
         BLASTABLE("blastable", (stack, level) -> hasRecipe(stack, level, RecipeType.BLASTING)),
-        COMPOSTABLE("compostable", stack -> ComposterBlock.COMPOSTABLES.containsKey(stack.getItem()));
+        COMPOSTABLE("compostable", stack -> stack.has(DataComponents.COMPOSTABLE));
 
         private final String id;
         private final Predicate<ItemStack> predicate;
