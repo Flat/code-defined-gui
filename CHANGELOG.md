@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v26.3-1.13.0] - 2026-09-18
+### :bug: Bug Fixes
+- [`459f3c7`](https://github.com/klikli-dev/code-defined-gui/commit/459f3c7a024700248a81acf9df8f5ced5a36bf6f) - use data components for furnace fuel and compostable checks in 26.3 *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+### :wrench: Chores
+- [`39efaf3`](https://github.com/klikli-dev/code-defined-gui/commit/39efaf32c8de82672736857e9862b3548a49b0b1) - update dependencies to 26.3 *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
 ## [release/v26.2-1.13.0] - 2026-08-08
 ### :wrench: Chores
 - [`a652098`](https://github.com/klikli-dev/code-defined-gui/commit/a65209849efdb78edb21e3cacd86046c4e931c05) - update to latest neo mod info system *(commit by [@klikli-dev](https://github.com/klikli-dev))*
@@ -132,3 +140,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v26.1.2-1.11.1]: https://github.com/klikli-dev/code-defined-gui/compare/release/v26.1.2-1.11.0...release/v26.1.2-1.11.1
 [release/v26.2-1.12.0]: https://github.com/klikli-dev/code-defined-gui/compare/release/v26.2-0.0.0...release/v26.2-1.12.0
 [release/v26.2-1.13.0]: https://github.com/klikli-dev/code-defined-gui/compare/release/v26.2-1.12.0...release/v26.2-1.13.0
+[release/v26.3-1.13.0]: https://github.com/klikli-dev/code-defined-gui/compare/release/v26.3-0.0.0...release/v26.3-1.13.0
